@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-      .sidenav {
+ .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -54,6 +54,16 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 </style>
   </head>
   <body>
@@ -68,7 +78,7 @@ body {
   <a href="about.html">About</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Links</span>
+<span style="font-size:30px;cursor:pointer;padding-left:30px" onclick="openNav()"><button class="block">&#9776; Links</button></span>
 
 <script>
 function openNav() {
