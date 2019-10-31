@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>SpookyGameJam</title>
+    <title>The Swarm V2.11</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
@@ -11,14 +11,49 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Builds.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: block;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.navbar .icon {
+  display: none;
+}
+</style>
   </head>
   <body>
+    <div class="navbar" id="myTopnav">
+    <a href="index.html"><img src="" alt="Logo" width="160"/></a>
+      <a href="instructions.html">Instructions</a>
+    </div>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 750px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">SpookyGameJam</div>
+        <div class="title">The Swarm V2.11</div>
       </div>
     </div>
   </body>
