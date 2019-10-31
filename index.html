@@ -16,6 +16,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+.game {
+  margin: 100;
+}
 
 .topnav {
   overflow: hidden;
@@ -43,6 +46,7 @@ body {
 </style>
   </head>
   <body>
+    <div class="game">
     <div class="webgl-content">
       <div id="gameContainer" style="width: 750px; height: 600px; padding-top: 50px"></div>
       <div class="footer">
@@ -50,6 +54,7 @@ body {
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">The Swarm V2.11</div>
       </div>
+    </div>
     </div>
     <div class="topnav">
       <a class="active" href="/index.html">The Swarm V2.11</a>
