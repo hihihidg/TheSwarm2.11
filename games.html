@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other Games - The Swarm V2.11</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.block {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: #4CAF50;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+</style>
+  </head>
+  <body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index">The Swarm V2.11</a>
+  <a href="instructions">Instructions</a>
+  <a href="games">Other Games</a>
+  <a href="#">About</a>
+  </div>
+<span style="font-size:30px;cursor:pointer;padding-left:30px" onclick="openNav()"><button class="block">&#9776; Links</button></span>
+<div style="padding:15px 15px 15px; font-size:30px; margin-top:50px; margin-right:10%; margin-left:10%; background-color:white;">
+  <h3>Other Games</h3>
+  <p>Coming Soon!</p>
+  </div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  </body>
+  </html>
